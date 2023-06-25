@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: "Open Sans", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+h2{
+    color: #dc3545;
+    color: #dc3545;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px auto 30px auto;
+
+}
+
+
+/* header section */
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://img.freepik.com/free-photo/education-day-arrangement-table-with-copy-space_23-2148721266.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: inline-block;
+    margin-top: 2rem;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    text-align: center;
+}
+
+
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 1rem 0 1rem;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: white;
+}
+
+
+nav>ul>li>a:hover {
+    color: #dc3545;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.header-text {
+    top: 30vh;
+    left: 5vw;
+    width: 40%;
+    position: absolute;
+}
+
+.header-text>.header-text-main {
+    font-size: 60px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header-text>.header-text-desc {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 500px) {
+    .social-handle {
+      display: none;
+    }
+    .header-text{
+        width: 90%;
+    }    
+    .about-container {
+            justify-content: center;
+          }
+}
+    
+
+
+.social-handle {
+    width: 60px;
+    height: 230px;
+    background-color: #dc3545;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    top: calc(50% - 20vh);
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    padding-top: 20px;
+}
+
+.social-handle>ul>li {
+    list-style: none;
+    margin:  0 0 1rem 0;
+}
+
+.fa{
+    font-size: 1rem;
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.fa:hover{
+    color: #dc3545;
+    transition: 0.2s;
+
+}
+
+/* Main  */
+/* about-us section */
+
+#about-us {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+
+  }
+  
+  .about-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-item{
+    margin: auto 25px auto 25px;
+  }
+  .about-item:first-child {
+      width: 350px;
+  }
+  .about-item:last-child {
+    width: 700px;
+
+}
+  .kt-joshi-img {
+    width: 100%;
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .about-desc>p {
+    margin-bottom: 30px;
+    
+  }
+
+/* pricing */
+
+#year{
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-container{
+    margin: 2rem auto;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    margin-right: 25px;
+    margin-bottom: 35px;
+    height: 100px;
+    transition: 0.2s;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card>h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+
+.card:hover{
+    background-color: #dc3545;
+    color: white;
+    transition: 0.4s;
+    transform: translateY(-20px);
+}
+
+/* contact-us */
+#contact-us {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .contact-us-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-us-item:first-child {
+      width: 500px;
+  }
+  .contact-us-item:last-child {
+    width: 700px;
+}
+
+.contact-us-img{
+    width: 100%
+}
+.contact-us-form{
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+input,textarea{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    border: 1px solid grey;
+    padding: 10px 10px 10px 15px;
+    border-radius: 15px;
+}
+
+input:focus,textarea:focus{
+    outline:2px solid #dc3545;
+    border: none;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"]{
+    background-color:#dc3546b7;
+    color: white;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background-color: #dc3545;
+    transition: 0.2s;
+    cursor: pointer;
+}
+/* @media only screen and (max-width: 500px) {
+    .contact-us-img{
+        display: none;
+    }
+    .contact-us-form>form{
+        width: 100%;
+    }
+} */
+
+
+/* Footer */
+
+footer{
+    padding: 10px 0 5px 0;
+    background-color: #dc3545;
+    color:white;
+    width: 100%;
+    margin-top: 70px;
+    overflow: hidden;
+    font-family:monospace;
+    text-align: center;
+}

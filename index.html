@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Let's gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#year">Year</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <h2 class="header-text-main">Dr. KT Joshi</h2>
+      <p class="header-text-desc">
+        PhD and PhD Guide. Assistant professor in chemistry at navjivan
+        science college with 31 year experience
+      </p>
+    </div>
+
+    <div class="social-handle">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/krishna.joshi.73345/" target="_blank" class="fa fa-facebook"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/drktjoshi/" target="_blank" class="fa fa-instagram"></a>
+        </li>
+        <li>
+          <a href="tel:+9426476082" target="_blank" class="fa fa-phone"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-container">
+        <div class="about-item about-img">
+          <img class="kt-joshi-img" src="/src/about-img.jpeg" alt="Dr. KT Joshi" />
+        </div>
+        <div class="about-item about-desc">
+          <p>
+            Dr. K.T. Joshi is a highly accomplished and dedicated chemistry
+            lecturer who has been passionately teaching the subject since 1992
+            at Navjivan Science College in Dahod. With an extensive academic
+            background and a wealth of experience, he has become a respected
+            figure among both his colleagues and students. In addition to his
+            teaching responsibilities, Dr. Joshi serves as a PhD guide,
+            mentoring and supervising the research endeavors of two bright
+            students under his guidance. His specialized area of expertise
+            lies in the fascinating field of coordination chemistry, where he
+            has made significant contributions through his innovative
+            research.
+          </p>
+          <p>
+            Driven by his insatiable curiosity and deep understanding of the
+            subject, he continually explores the intricacies of coordination
+            compounds and their applications in various industries. Dr.
+            Joshi's passion for teaching, coupled with his commitment to
+            advancing the boundaries of knowledge through research, inspires
+            and motivates his students to excel in their academic pursuits.
+            His dedication and expertise have undoubtedly played a pivotal
+            role in shaping the next generation of aspiring chemists and
+            researchers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="year">
+      <h2>Year</h2>
+      <div class="card-container">
+        <a href="/year/first-year.html">
+          <div class="card">
+            <h3>First Year</h3>
+          </div>
+        </a>
+        <a href="/year/second-year.html">
+          <div class="card">
+            <h3>Second Year</h3>
+          </div>
+        </a>
+        <a href="/year/third-year.html">
+          <div class="card">
+            <h3>Third Year</h3>
+          </div>
+        </a>
+        <a href="/year/other.html">
+          <div class="card">
+            <h3>Other</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact-us">
+      <h2>Contact Me</h2>
+      <div class="contact-us-container">
+        <div class="contact-us-item">
+          <img class="contact-us-img"
+            src="https://voxya.com/stories/wp-content/uploads/2021/05/customer-care-fake-product-voxya.jpg"
+            alt="contact us image" />
+        </div>
+        <div  class="contact-us-item">
+          <form onsubmit="sendEmail();reset(); return false;" class="contact-us-form">
+            <input type="text" name="subject" id="subject" placeholder="Enter your name" />
+            <input type="email" name="email" id="email" placeholder="Enter your email" />
+            <textarea name="query" id="query" cols="30" rows="4" placeholder="Write your query..."></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script>
+            function sendEmail() {
+              Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "drktjoshisstudymaterial@gmail.com",
+                Password: "abcd",
+                To: "drktjoshisstudymaterial@gmail.com",
+                From: document.getElementById("email").value,
+                Subject: document.getElementById("subject").value,
+                Body: document.getElementById("query").value,
+              }).then((message) => alert("successsssss!!!!!!!!!!!"));
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&#169; Copyright 2023 KT Joshi, All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
