@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: "Open Sans", Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+h2{
+    color: #dc3545;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px auto 30px auto;
+
+}
+
+h3{
+    font-size: 25px;
+    text-decoration:underline;
+    margin: 20px 0 20px 0;
+}
+
+
+/* header section */
+
+
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+    
+
+
+.social-handle {
+    width: 60px;
+    height: 230px;
+    background-color: #dc3545;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    top: calc(50% - 20vh);
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    padding-top: 20px;
+}
+
+.social-handle>ul>li {
+    list-style: none;
+    margin:  0 0 1rem 0;
+}
+
+.fa{
+    font-size: 1rem;
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.fa:hover{
+    color: #dc3545;
+    transition: 0.2s;
+
+}
+
+/* main */
+
+.material-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 100px;
+}
+.material-item{
+    margin-bottom: 20px;
+}
+.material-item>span{
+    margin-right: 15px;
+
+}
+
+.material-item-symbol>img{
+    width: 20px;
+}
+a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #dc3545;
+}
