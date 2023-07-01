@@ -113,27 +113,29 @@
             alt="contact us image" />
         </div>
         <div  class="contact-us-item">
-          <form onsubmit="sendEmail();reset(); return false;" class="contact-us-form">
+          <form  class="contact-us-form">
             <input type="text" name="subject" id="subject" placeholder="Enter your name" />
             <input type="email" name="email" id="email" placeholder="Enter your email" />
             <textarea name="query" id="query" cols="30" rows="4" placeholder="Write your query..."></textarea>
             <input type="submit" value="Submit" />
           </form>
 
+          <!-- onsubmit="sendEmail();reset(); return false;"
           <script src="https://smtpjs.com/v3/smtp.js"></script>
           <script>
             function sendEmail() {
               Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "drktjoshisstudymaterial@gmail.com",
-                Password: "abcd",
+                Password: "7A090D7051DFA5B8BE7791CA6EFFD18C3C01",
                 To: "drktjoshisstudymaterial@gmail.com",
-                From: document.getElementById("email").value,
+                // From: document.getElementById("email").value,
+                From: "amankumarmahavar@gmail.com",
                 Subject: document.getElementById("subject").value,
                 Body: document.getElementById("query").value,
-              }).then((message) => alert("successsssss!!!!!!!!!!!"));
+              }).then((message) => alert(message));
             }
-          </script>
+          </script> -->
         </div>
       </div>
     </section>
