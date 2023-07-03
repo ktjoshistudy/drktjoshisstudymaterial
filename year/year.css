@@ -69,6 +69,8 @@ header {
 
 }
 
+
+
 /* main */
 
 .material-container{
@@ -95,4 +97,18 @@ a{
 }
 a:hover{
     color: #dc3545;
+}
+@media only screen and (max-width: 500px) {
+    .social-handle {
+      display: none;
+    }
+    .header-text{
+        width: 90%;
+    }    
+    .about-container {
+            justify-content: center;
+    }
+    .material-container{
+        margin-left: 30px;
+    }
 }
